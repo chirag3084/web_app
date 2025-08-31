@@ -1,9 +1,25 @@
-<html>
-  <head>Fruit_Names</head>
-  <body>
-    <li>
-      Apple
-    </li>
-    <li>Orange</li>
-  </body>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do App</title>
+  <style>
+    body { font-family: Arial; margin: 2rem; background: #f4f4f4; }
+    h1 { color: #333; }
+    input[type="text"] { padding: 0.5rem; width: 70%; }
+    button { padding: 0.5rem; margin-left: 0.5rem; }
+    ul { list-style: none; padding: 0; }
+    li { background: #fff; margin: 0.5rem 0; padding: 0.5rem; display: flex; justify-content: space-between; align-items: center; border-radius: 4px; }
+    .done { text-decoration: line-through; color: gray; }
+  </style>
+</head>
+<body>
+  <h1>📝 My To-Do List</h1>
+  <input type="text" id="taskInput" placeholder="Add a new task..." />
+  <button onclick="addTask()">Add</button>
+  <ul id="taskList"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
